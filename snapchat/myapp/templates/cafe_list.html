@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Coffees</title>
+</head>
+<body>
+    <h1>Cafestore register</h1>
+    <ul>
+        <table>
+            <tr>
+                <th>item</th>
+                <th>cost</th>
+            </tr>
+            {% for name in cafestore %}
+            <tr>
+                <td>{{name.item}}</td>
+                <td>{{name.cost}}</td>
+            </tr>
+            {% end for %}
+        </table>
+    </ul>
+</body>
+</html>
